@@ -1296,48 +1296,63 @@
         </div>
     </div>
 
-   <!-- ========== ПОПАП 2 (Fintech) ========== -->
-<div class="popup-overlay" id="popup2Overlay">
-    <div class="popup">
-        <div class="popup2-content">
-            <!-- Верхний блок -->
-            <div class="popup2-top-block">
-                <div class="popup2-header">
-                    <div class="popup2-title">
-                        Разработка сайта для крупного fintech сервиса (лидер рынка взыскания)
-                    </div>
-                    <div class="popup2-meta-grid" style="display: flex; flex-direction: column; gap: 8px;">
-                        <!-- Роль - горизонтально -->
-                        <div style="display: flex; justify-content: flex-start; align-items: flex-start; gap: 16px;">
-                            <div style="width: 76px; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-weight: 700; line-height: 19.2px;">Роль:</div>
-                            <div style="flex: 1; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-weight: 400; line-height: 19.2px;">UI/UX-дизайнер в составе команды, проектировала систему внутренних страниц</div>
-                        </div>
-                        <!-- Команда - горизонтально -->
-                        <div style="display: flex; justify-content: flex-start; align-items: flex-start; gap: 16px;">
-                            <div style="width: 76px; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-weight: 700; line-height: 19.2px;">Команда:</div>
-                            <div style="flex: 1; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-weight: 400; line-height: 19.2px;">Я в составе команды UI/UX, проджект‑менеджер, команда разработки</div>
-                        </div>
-                        <!-- Сроки - горизонтально -->
-                        <div style="display: flex; justify-content: flex-start; align-items: flex-start; gap: 16px;">
-                            <div style="width: 76px; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-weight: 700; line-height: 19.2px;">Сроки:</div>
-                            <div style="flex: 1; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-weight: 400; line-height: 19.2px;">4 месяца</div>
-                        </div>
-                    </div>
-                </div>
+     <!-- ========== ПОПАП 3 (Промо-проект для Поиска) ========== -->
+    <div class="popup-overlay" id="popup3Overlay">
+        <div class="popup">
+            <!-- Кнопка закрытия -->
+            <div class="close-button" id="closePopup3Btn">
+                <div class="close-icon"></div>
             </div>
-
-            <!-- Первое изображение: десктоп и мобильное -->
-            <div class="popup2-image-container">
-                <img class="desktop-img" src="popup2222.png" alt="Fintech project desktop" style="width: 100%; height: auto; object-fit: contain; display: block;">
-                <img class="mobile-img" src="mobpop21.png" alt="Fintech project mobile" style="width: 100%; height: auto; object-fit: contain; display: none;">
-            </div>
-
-            <!-- Текстовый блок -->
-            <div class="popup2-text-block">
-                <div class="popup2-meta-value">Работа шла в сжатые сроки параллельно с другими задачами. Пришлось быстро вникать в специфику финтеха и находить решения, которые не тормозят разработку. Упор сделала на компоненты — чтобы не рисовать одно и то же по 10 раз</div>
-                <div class="popup2-meta-value">Было важно сохранить баланс между пожеланиями заказчика, потребностями пользователей и возможностями разработки. Часть решений проходили долгий процесс согласований с созвонами и аргументацией, но в итоге нашли компромисс, который устроил всех</div>
-            </div>
-
+            
+            <!-- ДЕСКТОПНАЯ ВЕРСИЯ (отображается на экранах больше 768px) -->
+            <div class="desktop-only">
+                <div style="width: 100%; background: #00060C; display: flex; flex-direction: column; align-items: center;">
+                    <!-- Контейнер для центрирования всего контента -->
+                    <div style="max-width: 1440px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+                        <!-- Верхний блок с отступами -->
+                        <div style="padding-top: 140px; padding-bottom: 100px; background: #00060C; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 120px;">
+                            
+                            <!-- Блок с заголовком и мета-информацией -->
+                            <div style="width: 544px; display: flex; flex-direction: column; align-items: center; gap: 40px;">
+                                <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 24px;">
+                                    <div style="width: 100%; color: rgba(255, 255, 255, 0.80); font-size: 24px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 28.80px; white-space: pre-line; text-align: left;">
+                                        Промо-проект для Поиска<br/>«Угадайте цену квартиры»
+                                    </div>
+                                    <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
+                                        <!-- Роль -->
+                                        <div style="width: 100%; display: flex; justify-content: flex-start; align-items: flex-start; gap: 16px;">
+                                            <div style="width: 76px; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 19.20px;">Роль:</div>
+                                            <div style="flex: 1; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 19.20px;">Ведущий дизайнер интерфейса</div>
+                                        </div>
+                                        <!-- Команда -->
+                                        <div style="width: 100%; display: flex; justify-content: flex-start; align-items: flex-start; gap: 16px;">
+                                            <div style="width: 76px; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 19.20px;">Команда:</div>
+                                            <div style="flex: 1; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 19.20px;">Я в составе команды UI/UX, проджект-менеджер, команда графического дизайна, команда разработки</div>
+                                        </div>
+                                        <!-- Сроки -->
+                                        <div style="width: 100%; display: flex; justify-content: flex-start; align-items: flex-start; gap: 16px;">
+                                            <div style="width: 76px; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 19.20px;">Сроки:</div>
+                                            <div style="flex: 1; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 19.20px;">3 месяца</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Изображение 1 с центрированием -->
+                            <div style="width: 100%; display: flex; justify-content: center;">
+                                <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/main%20__%201920.png" alt="Project image 1" style="width: 100%; max-width: 1440px; height: auto; display: block;">
+                            </div>
+                            
+                            <!-- Блок "Задача" (правильный текст) -->
+                            <div style="width: 544px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px;">
+                                <div style="color: rgba(255, 255, 255, 0.80); font-size: 24px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 28.80px;">Задача</div>
+                                <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
+                                    <div style="width: 100%; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 19.20px;">
+                                        <span>В рамках запуска нового раздела «Квартиры» было важно не просто рассказать о продукте, а дать пользователям </span>
+                                        <span style="font-weight: 700;">возможность попробовать его в действии</span>
+                                    </div>
+                                    <div style="width: 100%; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 19.20px;">
+                                        Задача состояла в разработке интерактивного промо-формата, который вовлечёт пользователей в игровое взаимодействие с объявлениями о недвижимости
             <!-- Результат -->
             <div class="popup2-result-block">
                 <div class="popup2-result-title">Результат</div>
