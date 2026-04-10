@@ -125,6 +125,29 @@
             transform: scale(1.05);
             z-index: 10;
         }
+        
+        /* Ховер текст для карточек */
+        .image-hover-text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+            text-align: center;
+            padding: 8px 4px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            backdrop-filter: blur(4px);
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 0.3px;
+        }
+        
+        .image-item:hover .image-hover-text {
+            opacity: 1;
+        }
 
         .footer {
             height: 48px;
@@ -935,6 +958,11 @@
                 width: calc(33.333% - 6px);
                 aspect-ratio: 1/1;
             }
+            
+            .image-hover-text {
+                font-size: 10px;
+                padding: 6px 2px;
+            }
 
             .meta-row {
                 flex-direction: column;
@@ -1041,6 +1069,11 @@
                 width: calc(33.333% - 6px);
             }
             
+            .image-hover-text {
+                font-size: 8px;
+                padding: 4px 2px;
+            }
+            
             .popup2-title,
             .popup4-title,
             .popup5-title,
@@ -1066,12 +1099,24 @@
                 </div>
 
                 <div class="image-grid">
-                    <div class="image-item" id="openPopup1Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/1%20(3).png');"></div>
-                    <div class="image-item" id="openPopup2Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/2.png');"></div>
-                    <div class="image-item" id="openPopup3Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/3.png');"></div>
-                    <div class="image-item" id="openPopup4Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/4%20(2).png');"></div>
-                    <div class="image-item" id="openPopup5Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/5.png');"></div>
-                    <div class="image-item" id="openPopup6Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/6.png');"></div>
+                    <div class="image-item" id="openPopup1Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/1%20(3).png');">
+                        <div class="image-hover-text">Игровой лендинг</div>
+                    </div>
+                    <div class="image-item" id="openPopup2Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/2.png');">
+                        <div class="image-hover-text">Fintech сервис</div>
+                    </div>
+                    <div class="image-item" id="openPopup3Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/3.png');">
+                        <div class="image-hover-text">Промо-проект для Поиска</div>
+                    </div>
+                    <div class="image-item" id="openPopup4Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/4%20(2).png');">
+                        <div class="image-hover-text">Потоковые задачи</div>
+                    </div>
+                    <div class="image-item" id="openPopup5Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/5.png');">
+                        <div class="image-hover-text">Спортивное приложение</div>
+                    </div>
+                    <div class="image-item" id="openPopup6Btn" style="background-image: url('https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/6.png');">
+                        <div class="image-hover-text">Хобби</div>
+                    </div>
                 </div>
             </div>
 
@@ -1085,7 +1130,6 @@
     <div class="popup-overlay" id="popup1Overlay">
         <div class="popup">
             <div class="popup-content" style="padding-top: 80px; gap: 64px;">
-                <!-- Верхний блок -->
                 <div class="top-block">
                     <div class="project-info">
                         <div class="popup-title">
@@ -1108,13 +1152,10 @@
                     </div>
                 </div>
 
-                <!-- Белая секция -->
                 <div class="white-section">
-                    <!-- Первое изображение -->
                     <img class="desktop-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/pp11.png" alt="Hero desktop" style="width: 100%; display: block;">
                     <img class="mobile-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop11.png" alt="Hero mobile" style="width: 100%; display: none;">
                     
-                    <!-- Задача -->
                     <div class="task-block">
                         <div class="section-title-black">Задача</div>
                         <div class="text-block">
@@ -1127,11 +1168,9 @@
                         </div>
                     </div>
 
-                    <!-- Второе изображение -->
                     <img class="desktop-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/pp12.png" alt="Middle desktop" style="width: 100%; display: block;">
                     <img class="mobile-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop12.png" alt="Middle mobile" style="width: 100%; display: none;">
 
-                    <!-- Процесс -->
                     <div class="process-block">
                         <img class="desktop-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/pp13.png" alt="Process desktop" style="flex: 1 1 300px; height: auto; object-fit: contain; width: 100%; min-width: 280px; display: block;">
                         <img class="mobile-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop13.png" alt="Process mobile" style="flex: 1 1 300px; height: auto; object-fit: contain; width: 100%; min-width: 280px; display: none;">
@@ -1160,7 +1199,6 @@
                     </div>
                 </div>
 
-                <!-- Результат -->
                 <div class="result-block">
                     <div class="section-title-white">Результат</div>
                     <div class="text-block">
@@ -1177,7 +1215,6 @@
                     </div>
                 </div>
 
-                <!-- Финальное изображение -->
                 <img class="desktop-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/pp14.png" alt="Final desktop" style="width: 100%; display: block;">
                 <img class="mobile-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop14.png" alt="Final mobile" style="width: 100%; display: none;">
             </div>
@@ -1191,7 +1228,6 @@
     <div class="popup-overlay" id="popup2Overlay">
         <div class="popup">
             <div class="popup2-content">
-                <!-- Верхний блок -->
                 <div class="popup2-top-block">
                     <div class="popup2-header">
                         <div class="popup2-title">
@@ -1214,19 +1250,16 @@
                     </div>
                 </div>
 
-                <!-- Первое изображение: десктоп и мобильное -->
                 <div class="popup2-image-container">
                     <img class="desktop-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/popup2222.png" alt="Fintech project desktop" style="width: 100%; height: auto; object-fit: contain; display: block;">
                     <img class="mobile-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop21.png" alt="Fintech project mobile" style="width: 100%; height: auto; object-fit: contain; display: none;">
                 </div>
 
-                <!-- Текстовый блок -->
                 <div class="popup2-text-block">
                     <div class="popup2-meta-value">Работа шла в сжатые сроки параллельно с другими задачами. Пришлось быстро вникать в специфику финтеха и находить решения, которые не тормозят разработку. Упор сделала на компоненты — чтобы не рисовать одно и то же по 10 раз</div>
                     <div class="popup2-meta-value">Было важно сохранить баланс между пожеланиями заказчика, потребностями пользователей и возможностями разработки. Часть решений проходили долгий процесс согласований с созвонами и аргументацией, но в итоге нашли компромисс, который устроил всех</div>
                 </div>
 
-                <!-- Результат -->
                 <div class="popup2-result-block">
                     <div class="popup2-result-title">Результат</div>
                     <div class="popup2-result-text">Внедрение продуманной иерархии и системы акцентов позволило структурировать сложные массивы данных, снизив нагрузку на пользователя и сделав взаимодействие с сервисом более понятным</div>
@@ -1237,7 +1270,6 @@
                     </div>
                 </div>
 
-                <!-- Финальное изображение: десктоп и мобильное -->
                 <div class="popup2-image-container">
                     <img class="desktop-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/Frame%2021361407955.png" alt="Final result desktop" style="width: 100%; height: auto; object-fit: contain; display: block;">
                     <img class="mobile-img" src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop22.png" alt="Final result mobile" style="width: 100%; height: auto; object-fit: contain; display: none;">
@@ -1252,18 +1284,15 @@
     <!-- ========== ПОПАП 3 (Промо-проект для Поиска) ========== -->
     <div class="popup-overlay" id="popup3Overlay">
         <div class="popup">
-            <!-- Кнопка закрытия -->
             <div class="close-button" id="closePopup3Btn">
                 <div class="close-icon"></div>
             </div>
             
-            <!-- ДЕСКТОПНАЯ ВЕРСИЯ -->
             <div class="desktop-only">
                 <div style="width: 100%; background: #00060C; display: flex; flex-direction: column; align-items: center;">
                     <div style="max-width: 1440px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
                         <div style="padding-top: 140px; padding-bottom: 100px; background: #00060C; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 120px;">
                             
-                            <!-- Блок с заголовком и мета-информацией -->
                             <div style="width: 544px; display: flex; flex-direction: column; align-items: center; gap: 40px;">
                                 <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 24px;">
                                     <div style="width: 100%; color: rgba(255, 255, 255, 0.80); font-size: 24px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 28.80px; white-space: pre-line; text-align: left;">
@@ -1286,12 +1315,10 @@
                                 </div>
                             </div>
                             
-                            <!-- Изображение 1 -->
                             <div style="width: 100%; display: flex; justify-content: center;">
                                 <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/main%20__%201920.png" alt="Project image 1" style="width: 100%; max-width: 1440px; height: auto; display: block;">
                             </div>
                             
-                            <!-- Блок "Задача" - ПРАВИЛЬНЫЙ ТЕКСТ -->
                             <div style="width: 544px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px;">
                                 <div style="color: rgba(255, 255, 255, 0.80); font-size: 24px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 28.80px;">Задача</div>
                                 <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
@@ -1305,17 +1332,14 @@
                                 </div>
                             </div>
                             
-                            <!-- Изображение 2 -->
                             <div style="width: 100%; display: flex; justify-content: center;">
                                 <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/Frame%202136140805.png" alt="Project image 2" style="width: 100%; max-width: 1440px; height: auto; display: block;">
                             </div>
                             
-                            <!-- Изображение 3 -->
                             <div style="width: 100%; display: flex; justify-content: center;">
                                 <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/Frame%202136140803.png" alt="Project image 3" style="width: 100%; max-width: 1440px; height: auto; display: block;">
                             </div>
                             
-                            <!-- Блок "Процесс" -->
                             <div style="width: 544px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px;">
                                 <div style="color: rgba(255, 255, 255, 0.80); font-size: 24px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 28.80px;">Процесс</div>
                                 <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
@@ -1333,17 +1357,16 @@
                                 </div>
                             </div>
                             
-                            <!-- Изображение 4 -->
                             <div style="width: 100%; display: flex; justify-content: center;">
                                 <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/img921.png" alt="Project image 4" style="width: 100%; max-width: 1440px; height: auto; display: block;">
                             </div>
                             
-                            <!-- Блок "Результат" -->
                             <div style="width: 544px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px;">
                                 <div style="color: rgba(255, 255, 255, 0.80); font-size: 24px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 28.80px;">Результат</div>
                                 <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
                                     <div style="width: 100%; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 19.20px;">
-                                        <span>Интерактивный формат позволил превратить знакомство с новым тематическим поиском в понятный и увлекающий опыт. Промо-сайт стал не просто точкой входа в игру, а связующим элементом между пользователем и продуктом Яндекс Поиска</span>
+                                        <span>Интерактивный формат позволил превратить знакомство с новым тематическим поиском в понятный и увлекающий опыт. Промо-сайт стал не просто точкой входа в игру, а с</span>
+                                        <span style="font-weight: 700;">вязующим элементом между пользователем и продуктом Яндекс Поиска</span>
                                     </div>
                                     <div style="width: 100%; color: rgba(255, 255, 255, 0.80); font-size: 16px; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 19.20px;">
                                         Решение помогло поддержать вовлечённость, стимулировать регулярные возвраты и аккуратно встроить продуктовые сценарии в игровой формат, сохранив баланс между развлечением и сервисом
@@ -1351,7 +1374,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Изображение 5 -->
                             <div style="width: 100%; display: flex; justify-content: center;">
                                 <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/1921fgfkxdkk.png" alt="Project image 5" style="width: 100%; max-width: 1440px; height: auto; display: block;">
                             </div>
@@ -1360,12 +1382,10 @@
                 </div>
             </div>
             
-            <!-- МОБИЛЬНАЯ ВЕРСИЯ -->
             <div class="mobile-only">
                 <div style="width: 100%; background: #00060C; display: flex; flex-direction: column; align-items: center;">
                     <div style="padding-top: 80px; background: #00060C; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 64px;">
                         
-                        <!-- Блок с заголовком и мета-информацией -->
                         <div style="width: 100%; padding-left: 12px; padding-right: 12px; display: flex; flex-direction: column; align-items: center; gap: 40px;">
                             <div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 24px;">
                                 <div style="width: 100%; color: rgba(255, 255, 255, 0.80); font-size: 20px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 24px; white-space: pre-line; text-align: left;">
@@ -1388,10 +1408,8 @@
                             </div>
                         </div>
                         
-                        <!-- Изображение 1 -->
                         <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop31.png" alt="Project image 1 mobile" style="width: 100%; height: auto; display: block;">
                         
-                        <!-- Блок "Задача" - ПРАВИЛЬНЫЙ ТЕКСТ на мобилке -->
                         <div style="width: 90%; max-width: 366px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
                             <div style="color: rgba(255, 255, 255, 0.80); font-size: 20px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 24px;">Задача</div>
                             <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
@@ -1405,13 +1423,9 @@
                             </div>
                         </div>
                         
-                        <!-- Изображение 2 -->
                         <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop32.png" alt="Project image 2 mobile" style="width: 100%; height: auto; display: block;">
-                        
-                        <!-- Изображение 3 -->
                         <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop33.png" alt="Project image 3 mobile" style="width: 100%; height: auto; display: block;">
                         
-                        <!-- Блок "Процесс" -->
                         <div style="width: 90%; max-width: 366px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
                             <div style="color: rgba(255, 255, 255, 0.80); font-size: 20px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 24px;">Процесс</div>
                             <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
@@ -1429,10 +1443,8 @@
                             </div>
                         </div>
                         
-                        <!-- Изображение 4 -->
                         <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop34.png" alt="Project image 4 mobile" style="width: 100%; height: auto; display: block;">
                         
-                        <!-- Блок "Результат" -->
                         <div style="width: 90%; max-width: 366px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
                             <div style="color: rgba(255, 255, 255, 0.80); font-size: 20px; font-family: 'Inter', sans-serif; font-weight: 700; line-height: 24px;">Результат</div>
                             <div style="width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
@@ -1446,7 +1458,6 @@
                             </div>
                         </div>
                         
-                        <!-- Изображение 5 -->
                         <img src="https://raw.githubusercontent.com/aliceashihmina-commits/portfolioimg/main/mobpop35.png" alt="Project image 5 mobile" style="width: 100%; height: auto; display: block; padding-bottom: 40px;">
                     </div>
                 </div>
@@ -1461,7 +1472,7 @@
                 <div class="popup4-top-block">
                     <div class="popup4-header">
                         <div class="popup4-title">
-                            Потоковые задачи для сервиса найма IT‑специалистов Яндекс HR
+                            Потоковые задачи для сервиса найма IT-специалистов Яндекс HR
                         </div>
                         <div class="popup4-meta-grid">
                             <div class="popup4-meta-item">
